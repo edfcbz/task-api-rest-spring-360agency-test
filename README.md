@@ -38,16 +38,41 @@ Search **Implantation** about project setup on development environment.
   * 3.4 - Execute 3.1 step again
 
 ## ⚙️ Testing environment
-* 1 - Run Postman
-  * 1.1 - Select a POST request and type localhost:8080/auth/signin
-  * 1.2 - In Body type: {
+* 1 - Requesting a token (Security Layer)
+  * 1.0 - Run Postman
+  * 1.1 - Select a POST request and type http://localhost:8080/auth/signin
+  * 1.2 - In Body section type: {
                           "username":"leandro",
                           "password":"admin123"
                         }
   * 1.3 - Select SEND button (You will receive a message with a token as below)
-  * {
-     "username": "leandro","token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWFuZHJvIiwicm9sZXMiOlsiQURNSU4iLCJNQU5BR0VSIl0sImlhdCI6MTY0OTgxMTExMSwiZXhwIjoxNjQ5ODE0NzExfQ.PFenUMoOdV1da7c01APm7WN7VbX4xsngsZlbujHco4Q"}                        
-* Open browser and type: http://localhost:8080/store (This url will list all store registered in store table.
+  {"username": "leandro","token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWFuZHJvIiwicm9sZXMiOlsiQURNSU4iLCJNQU5BR0VSIl0sImlhdCI6MTY0OTgxMTExMSwiZXhwIjoxNjQ5ODE0NzExfQ.PFenUMoOdV1da7c01APm7WN7VbX4xsngsZlbujHco4Q"}                        
+  * 1.4 - Copy the token returned without ""
+
+* 2 - Requesting a TomCat service
+  * 1.0 - Select a GET request and type http://localhost:8080
+  * 1.1 - In Header section create a new Authorization key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
+  * 1.2 - Select SEND button. You will receive all a list with services available. This message is like this below:
+  {
+    "_links": {
+        "dealers": {
+            "href": "http://localhost:8080/dealers{?page,size,sort}",
+            "templated": true
+        },
+        "users": {
+            "href": "http://localhost:8080/users{?page,size,sort}",
+            "templated": true
+        },
+        "listings": {
+            "href": "http://localhost:8080/listings{?page,size,sort}",
+            "templated": true
+        },
+        "profile": {
+            "href": "http://localhost:8080/profile"
+        }
+    }
+}
+
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
