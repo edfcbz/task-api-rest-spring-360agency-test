@@ -31,9 +31,9 @@ Search **Implantation** about project setup on development environment.
 * 3 - Open package br.com.edfcbz and locate Statup.java file. Run it as Java Application. The TomCat server will run at 8080 port
   * 3.1 - Tips: If the Eclipse console show the message "Caused by: java.net.BindException: Address already in use: bind", finalize the service in 8080 port as showed
   * 3.2 - Run CMD as Administrator and type de command line: C:\>netstat -a -n -o | findstr :8080 (This command will show a line as below
-          * TCP 0.0.0.0:8080 0.0.0.0:0 LISTENING 8457 (In this example 8457 is the PID process)
+          ** TCP 0.0.0.0:8080 0.0.0.0:0 LISTENING 8457 (In this example 8457 is the PID process)
   * 3.3 - Run CMD command line as Administrator: C:\>taskKill.exe /F /PID 8457 ( This command will show a line as below 
-          * SUCCESS: The process with PID 8457 was terminated. ( Or similar message )
+          ** SUCCESS: The process with PID 8457 was terminated. ( Or similar message )
   * 3.4 - Execute 3.1 step again
 
 ## ⚙️ Testing environment
