@@ -55,23 +55,23 @@ Search **Implantation** about project setup on development environment.
   * 1.2 - Select SEND button. You will receive all a list with services available. This message is like this below:
   - {<br/>
     "_links": {<br/>
-      - "dealers": {<br/>
-            - "href": "http://localhost:8080/dealers{?page,size,sort}",<br/>
-            - "templated": true<br/>
-       -  },<br/>
-       -  "users": {<br/>
-           -  "href": "http://localhost:8080/users{?page,size,sort}",<br/>
-           -  "templated": true<br/>
-        - },<br/>
-        - "listings": {<br/>
-           -  "href": "http://localhost:8080/listings{?page,size,sort}",<br/>
-            - "templated": true<br/>
-        - },<br/>
-        - "profile": {<br/>
-            - "href": "http://localhost:8080/profile"<br/>
-       -  }<br/>
-   -  }<br/>
-- }<br/>
+      -"dealers": {<br/>
+            -"href": "http://localhost:8080/dealers{?page,size,sort}",<br/>
+            -"templated": true<br/>
+       -},<br/>
+       -"users": {<br/>
+           -"href": "http://localhost:8080/users{?page,size,sort}",<br/>
+           -"templated": true<br/>
+        -},<br/>
+        -"listings": {<br/>
+           -"href": "http://localhost:8080/listings{?page,size,sort}",<br/>
+            -"templated": true<br/>
+        -},<br/>
+        -"profile": {<br/>
+            -"href": "http://localhost:8080/profile"<br/>
+       -}<br/>
+   -}<br/>
+-}<br/>
 
 ### Features
 
