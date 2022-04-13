@@ -20,9 +20,9 @@ Search **Implantation** about project setup on development environment.
 
 * 1 - Install and Run the MySQL Server (Default port)
 * 3 - Install and Run the HeidiSQL
-  * 3.1 - Create a new database named task-api-rest-360agency
-  * 3.2 - User: root password: admin123 
-* 4 - Run DB_APIREST.sql by MySQL Workbench (This step will create the SCHEMA and will insert basic data into tables) 
+  * 3.1 - In HeidiSQL run CreateDataBaseAndData.sql file (This step will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
+  * 3.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
+  * 3.3 - Verify if squema was created and tables has data 
 
 ### 🔧 Development Environment Setup - DEVELOPMENT
 
