@@ -77,6 +77,7 @@ Search **Implantation** about project setup on development environment.
   * 1.3 - GET request for http://localhost:8080/listing/state/{stateListing} ( Show all Listing whose **state** atribute match with  **stateListing**  parameter)
   * 1.4 - GET request for http://localhost:8080/listing/dealerid/{dealerId} ( Show all Listing whose **dealerid** atribute match with  **dealerId**  parameter)
   * 1.5 - GET request for http://localhost:8080/listing/dealerid/{dealerId}/state/{stateListing} ( Show all Listing whose **dealerid** atribute match with  **dealerId** and  **state** atribute match with  **stateListing** parameter)
+  * 1.6 - POST request for http://localhost:8080/listing ( Save the Dealer informed in  Body section )
 
 
 
