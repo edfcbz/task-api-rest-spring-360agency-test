@@ -58,11 +58,21 @@ Search **Implantation** about project setup on development environment.
 ![image](https://user-images.githubusercontent.com/63114961/163140854-fb7691cd-cd45-412b-8c78-c5fd09df6046.png)
 
 
-## ⚙️ Using API RESTFul (Endpoints)
-* 1 - **Dealer endpoints** There are different services for this Entity, as below:
+## ⚙️ API RESTFul - Endpoints list
+* 1 - **Dealer:**
   * 1.0 - GET request for http://localhost:8080/dealer (Show all Dealer registered in the Database)
   * 1.1 - GET request for http://localhost:8080/dealer/{dealerId} (Show the Dealer with id informed and his/her Listing registered in Database)
+  * 1.3 - GET request for http://localhost:8080/dealer/{dealerId}/{listingState} (Show the Dealer with id informed and his/her Listing registered in Database by Listing state)
+  * 1.4 - GET request for http://localhost:8080/dealer/name/{dealerName} (Lists all dealers whose names match the given parameter, partially or fully ) 
+  * 1.5 - DELETE request for http://localhost:8080/dealer/{dealerId} (Lists all dealers whose names match the given parameter, partially or fully ) 
+  * 1.5 - UPDATE request for http://localhost:8080/dealer (Update the Dealer informed in  Body section )
+  * 1.6 - POST request for http://localhost:8080/dealer (Save the Dealer informed in  Body section )
  
+
+## ⚙️ API RESTFul - Endpoints list
+* 1 - **Listing:**
+
+
 
 
 
