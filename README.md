@@ -61,8 +61,8 @@ Search **Implantation** about project setup on development environment.
 ## ⚙️ API RESTFul - Endpoints list
 * 1 - **Dealer:**
   * 1.0 - GET request for http://localhost:8080/dealer ( Show all Dealer registered in the Database )
-  * 1.1 - GET request for http://localhost:8080/dealer/{dealerId} ( Show the Dealer with id informed and Listing )
-  * 1.3 - GET request for http://localhost:8080/dealer/{dealerId}/{listingState} ( Show the Dealer according id and Listing registered by state )
+  * 1.1 - GET request for http://localhost:8080/dealer/{dealerId} ( Show the Dealer according **dealerId** informed and all Listing related )
+  * 1.3 - GET request for http://localhost:8080/dealer/{dealerId}/{listingState} ( Show the Dealer by dealerId and Listing registered by listingState )
   * 1.4 - GET request for http://localhost:8080/dealer/name/{dealerName} ( Lists all dealers whose names match with the parameter, fully or not ) 
   * 1.5 - DELETE request for http://localhost:8080/dealer/{dealerId} ( Delete Dealers by identification match with the parameter ) 
   * 1.5 - UPDATE request for http://localhost:8080/dealer ( Update the Dealer informed in  Body section using **dealerId** as key )
