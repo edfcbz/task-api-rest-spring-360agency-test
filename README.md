@@ -53,6 +53,7 @@ Search **Implantation** about project setup on development environment.
   * 1.0 - Select a GET request and type http://localhost:8080
   * 1.1 - In Header section create a new Authorization key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
   * 1.2 - Select SEND button. You will receive all a list with services available. This message is like this below:
+
 {<br/>
    - "_links": {<br/>
        * "dealers": {<br/>
