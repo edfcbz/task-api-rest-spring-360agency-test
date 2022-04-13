@@ -8,16 +8,24 @@ Download the complete project by GitHub option
 
 Search **Implantation** about project setup on development environment.
 
-## 📋 Business ,  and Rules
+## 📋 Business
 * 1 - **Requirements**
   * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)</br>
            * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
   * 1.2 - **Car Dealer** - An owner of the advertisement
-  * 1.3 - **Tier Limit** - A number of published listings a dealer can have online
+           * 1.2.1 - **Atributes** id: uuid, name: String
+           * 1.2.2 - **Tier Limit** A number of published listings a dealer can have online 
+  * 1.3 - **Logs**
+  * 1.4 - **Exception handling**
+  * 1.5 - **Documentation**
+  * 1.6 - **Tests**
 
 * 2 - **Functionality**
+  * 2.1 - **Listing:** Create, Update, Get all listings of a dealer with a given state, Publish a listing
+  * 2.1 - **Car Dealer:**  
+
+* 3 - **Rules**
   * 2.1 - **Car Dealer** - An owner of the advertisement
-* 3 - **Tier Limit** - A number of published listings a dealer can have online 
 
 
 ## 📋 Technical Requirements
