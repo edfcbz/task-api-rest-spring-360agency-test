@@ -10,7 +10,7 @@ Search **Implantation** about project setup on development environment.
 
 ## 📋 Business ,  and Rules
 * 1 - **Requirements**
-  * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** - available online or **draft** - not available online
+  * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)
            * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
   * 1.2 - **Car Dealer** - An owner of the advertisement
   * 1.3 - **Tier Limit** - A number of published listings a dealer can have online
