@@ -8,7 +8,7 @@ Download the complete project by GitHub option
 
 Search **Implantation** about project setup on development environment.
 
-### 📋 Requisites
+## 📋 Requisites
 
 * 1 - MySQL Database (SGBD Tool)
 * 2 - Java 11
@@ -17,7 +17,7 @@ Search **Implantation** about project setup on development environment.
 * 5 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
 * 6 - Http request tool as Postman  
 
-### 🔧 Development Environment Setup - DATABASE
+## 🔧 Development Environment Setup - DATABASE
 
 * 1 - Install and Run the MySQL Server (Default port)
 * 3 - Install and Run the HeidiSQL
@@ -25,7 +25,7 @@ Search **Implantation** about project setup on development environment.
   * 3.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
   * 3.3 - Verify if squema was created and tables has data 
 
-### 🔧 Development Environment Setup - DEVELOPMENT
+## 🔧 Development Environment Setup - DEVELOPMENT
 
 * 1 - Run Eclipse and Import the project as "Existing Maven Project" option
 * 2 - In Eclipse menu select Project -> Clean
@@ -53,21 +53,18 @@ Search **Implantation** about project setup on development environment.
 * 2 - Requesting a TomCat service
   * 1.0 - Select a GET request and type http://localhost:8080
   * 1.1 - In Header section create a new Authorization key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
-  * 1.2 - Select SEND button. You will receive all a list with services available. This message is like this below:
+  * 1.2 - Select SEND button. You will receive all a list with services available, as showed in image below. So, your enviroment is running...
 
 ![image](https://user-images.githubusercontent.com/63114961/163140854-fb7691cd-cd45-412b-8c78-c5fd09df6046.png)
 
-### Features
 
-- [x] Cadastro de usuário
-- [x] Cadastro de cliente
-- [ ] Cadastro de produtos
+## ⚙️ Using API RESTFul (Endpoints)
+* 1 - **Dealer endpoints** There are different services for this Entity, as below:
+  * 1.0 - GET request for http://localhost:8080/dealer (Show all Dealer registered in the Database)
+  * 1.1 - GET request for http://localhost:8080/dealer/{dealerId} (Show the Dealer with id informed and his/her Listing registered in Database)
+ 
 
-#### Features
 
-- [x] Cadastro de usuário
-- [x] Cadastro de cliente
-- [ ] Cadastro de produtos
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
