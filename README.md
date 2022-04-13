@@ -39,11 +39,14 @@ Search **Implantation** about project setup on development environment.
 
 ## ⚙️ Testing environment
 * 1 - Run Postman
-  * 1.1 - Select a POST request and typy localhost:8080/auth/signin
+  * 1.1 - Select a POST request and type localhost:8080/auth/signin
   * 1.2 - In Body type: {
                           "username":"leandro",
                           "password":"admin123"
                         }
+  * 1.3 - Select SEND button (You will receive a message with a token as below)
+  * {
+     "username": "leandro","token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWFuZHJvIiwicm9sZXMiOlsiQURNSU4iLCJNQU5BR0VSIl0sImlhdCI6MTY0OTgxMTExMSwiZXhwIjoxNjQ5ODE0NzExfQ.PFenUMoOdV1da7c01APm7WN7VbX4xsngsZlbujHco4Q"}                        
 * Open browser and type: http://localhost:8080/store (This url will list all store registered in store table.
 
 ## ⚙️ Documentation Swagger
