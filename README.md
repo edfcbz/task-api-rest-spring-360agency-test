@@ -79,6 +79,12 @@ Search **Implantation** about project setup on development environment.
 - [x] Cadastro de cliente
 - [ ] Cadastro de produtos
 
+#### Features
+
+- [x] Cadastro de usuário
+- [x] Cadastro de cliente
+- [ ] Cadastro de produtos
+
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
 
