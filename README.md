@@ -73,10 +73,10 @@ Search **Implantation** about project setup on development environment.
 * 1 - **Listing:**
   * 1.0 - GET request for http://localhost:8080/listing  ( Show all Listing registered in the Database )
   * 1.1 - GET request for http://localhost:8080/listing/{listingId} ( Show the Listing details according **listingId** informed and all Listing related )
-  * 1.2 - GET request for http://localhost:8080/listing/description/{descriptionVehicle} ( Show all Listing whose vehicle atribute match with  **descriptionVehicle** parameter )
-  * 1.3 - GET request for http://localhost:8080/listing/state/{stateListing} ( Show all Listing whose state atribute match with  **stateListing**  parameter)
-  * 1.4 - GET request for http://localhost:8080/listing/dealerid/{dealerId} ( Show all Listing whose dealerid atribute match with  **dealerId**  parameter)
-  * 1.5 - GET request for http://localhost:8080/listing/dealerid/{dealerId}/state/{stateListing} ( Show all Listing whose dealerid atribute match with  **dealerId** and  state atribute match with  **stateListing** parameter)
+  * 1.2 - GET request for http://localhost:8080/listing/description/{descriptionVehicle} ( Show all Listing whose **vehicle** atribute match with  **descriptionVehicle** parameter )
+  * 1.3 - GET request for http://localhost:8080/listing/state/{stateListing} ( Show all Listing whose **state** atribute match with  **stateListing**  parameter)
+  * 1.4 - GET request for http://localhost:8080/listing/dealerid/{dealerId} ( Show all Listing whose **dealerid** atribute match with  **dealerId**  parameter)
+  * 1.5 - GET request for http://localhost:8080/listing/dealerid/{dealerId}/state/{stateListing} ( Show all Listing whose **dealerid** atribute match with  **dealerId** and  **state** atribute match with  **stateListing** parameter)
 
 
 
