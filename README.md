@@ -8,7 +8,19 @@ Download the complete project by GitHub option
 
 Search **Implantation** about project setup on development environment.
 
-## 📋 Requisites
+## 📋 Business ,  and Rules
+* 1 - **Requirements**
+  * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** - available online or **draft** - not available online
+           * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
+  * 1.2 - **Car Dealer** - An owner of the advertisement
+  * 1.3 - **Tier Limit** - A number of published listings a dealer can have online
+
+* 2 - **Functionality**
+  * 2.1 - **Car Dealer** - An owner of the advertisement
+* 3 - **Tier Limit** - A number of published listings a dealer can have online 
+
+
+## 📋 Technical Requirements
 
 * 1 - MySQL Database (SGBD Tool)
 * 2 - Java 11
