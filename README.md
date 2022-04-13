@@ -46,7 +46,8 @@ Search **Implantation** about project setup on development environment.
                           "password":"admin123"
                         }
   * 1.3 - Select SEND button (You will receive a message with a token as below)
-  {"username": "leandro","token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWFuZHJvIiwicm9sZXMiOlsiQURNSU4iLCJNQU5BR0VSIl0sImlhdCI6MTY0OTgxMTExMSwiZXhwIjoxNjQ5ODE0NzExfQ.PFenUMoOdV1da7c01APm7WN7VbX4xsngsZlbujHco4Q"}                        
+  ![image](https://user-images.githubusercontent.com/63114961/163141178-e52010dc-74a7-44c4-9e02-ce4680aafaf5.png)
+
   * 1.4 - Copy the token returned without ""
 
 * 2 - Requesting a TomCat service
