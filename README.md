@@ -27,14 +27,6 @@ This project was developed using the best practices in API RESTFUll development.
 
  ![image](https://user-images.githubusercontent.com/63114961/163385585-6979664b-fffd-4f64-87a0-c976496f4161.png)
 
-
-
-## 🚀 Starting
-
-Download the complete project by GitHub option
-
-Search **Implantation** about project setup on development environment.
-
 ## 📋 Business
 * 1 - **Requirements**
   * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)</br>
@@ -63,6 +55,10 @@ Search **Implantation** about project setup on development environment.
 * 4 - The source code from https://github.com/edfcbz/task-api-rest-spring-360agency-test
 * 5 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
 * 6 - Http request tool as Postman  
+
+
+## 🚀 Starting
+Fellow the below step for run the project
 
 ## 🔧 Development Environment Setup - DATABASE
 
