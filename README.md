@@ -2,6 +2,25 @@
 
 This project implements the use of a RESTFull API for Dealer and his/her Listing, inclusing supports the Controller Class for a complete and customized CRUD operations
 
+## ⚙️ Main Technologies
+* 1 - **String** Boot, Security and Data
+* 2 - **Swagger** API Documentation
+* 3 - **Dozer** Class converter
+* 4 - **HATEAOS** Supports development of a RESTFul API 
+* 5 - **Jackson** Allows requeste and response in xml, yaml, json format
+* 6 - **JUnit** Test Class
+* 7 - **Mockito** Offers a library with different methods for performing and validating tests
+* 8 - **REST Assured** Testing and validating REST services
+
+## ⚙️ Architecture
+This project was developed using the best practices in API RESTFUll development. The layers that make up the solution are listed and described below
+* 1 - **Controller** In addition to implementing the endpoints for the services provided by the entity, this layer is responsible for converting the requests made in XML, JSON and YAML format to the format accepted by the backend and also converting responses to the format desired by the API user. 
+* 2 - **ServiceVO** Responsible for converting VO class objects to entity classes recognized by the business layer. The VO layer implementation allows modifying the attributes of the inner classes for the user consuming the API. This new mapping increases the security of the application by hiding the real attributes of the business classes.
+* 3 - **ServiceBO** In this layer are applied as business rules before the operations with the database, using a own repository data access class and other BO service classes. 
+
+## ⚙️ UML Diagrams (Simplified)
+
+
 ## 🚀 Starting
 
 Download the complete project by GitHub option
