@@ -26,6 +26,9 @@ This project was developed using the best practices in API RESTFUll development.
 * 2 - **Sequence Diagram**
 
  ![image](https://user-images.githubusercontent.com/63114961/163385585-6979664b-fffd-4f64-87a0-c976496f4161.png)
+ 
+ * 3 - **Class Test Diagram**
+ 
 
 ## 📋 Business
 * 1 - **Requirements**
@@ -47,7 +50,7 @@ This project was developed using the best practices in API RESTFUll development.
   * 2.1 - **Car Dealer** - An owner of the advertisement
 
 
-## 📋 Technical Requirements
+## 🛠️ Tools Technical Requirements
 
 * 1 - MySQL Database (SGBD Tool)
 * 2 - Java 11
@@ -57,7 +60,7 @@ This project was developed using the best practices in API RESTFUll development.
 * 6 - Http request tool as Postman  
 
 
-## 🚀 Starting
+## 🚀 Starting Database and Environment
 Fellow the below step for run the project
 
 ## 🔧 Development Environment Setup - DATABASE
@@ -123,12 +126,26 @@ Fellow the below step for run the project
   * 2.8 - UPDATE request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
   * 2.9 - DELETE request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
 
-## ⚙️ API RESTFul - Running Examples step by step
+## 🚀 Starting Getting Started with Endpoints
 ## Very Import Tip: Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
-* 1 - **Dealer** endpoints
-  * 1.1 - Find all Dealer
-  
 
+## ⚙️ API RESTFul - Running Examples step by step
+* 1 - **Dealer** endpoints
+  * 1.1 - Find all Dealer 
+
+## ⚙️ API RESTFul Test- Running Examples step by step
+* 1 - **Dealer** endpoints
+  * 1.1 - Find all Dealer 
+
+## 📋 API Development - Review Technical Aspect and Improvement Suggestions
+* 1 - <Class>
+   * 1.1 - Suggest 1
+   * 1.2 - Suggest 2
+ 
+## 📋 API Test - Review Technical Aspect and Improvement Suggestions
+* 1 - <Class>
+   * 1.1 - Suggest 1
+   * 1.2 - Suggest 2
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
