@@ -123,7 +123,11 @@ Fellow the below step for run the project
   * 2.8 - UPDATE request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
   * 2.9 - DELETE request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
 
-
+## ⚙️ API RESTFul - Running Examples step by step
+## Very Import Tip: Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
+* 1 - **Dealer** endpoints
+  * 1.1 - Find all Dealer
+  
 
 
 ## ⚙️ Documentation Swagger
