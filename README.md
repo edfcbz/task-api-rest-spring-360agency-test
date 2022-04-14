@@ -8,9 +8,10 @@ This project implements the use of a RESTFull API for Dealer and his/her Listing
 * 3 - **Dozer** Class converter
 * 4 - **HATEAOS** Supports development of a RESTFul API 
 * 5 - **Jackson** Allows requeste and response in xml, yaml, json format
-* 6 - **JUnit** Test Class
+* 6 - **JUnit** Test Class in Java Language
 * 7 - **Mockito** Offers a library with different methods for performing and validating tests
 * 8 - **REST Assured** Testing and validating REST services
+* 9 - **Hamcrast** Testing and validating REST services
 
 ## ⚙️ Architecture
 This project was developed using the best practices in API RESTFUll development. The layers that make up the solution are listed and described below
