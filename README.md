@@ -161,7 +161,7 @@ Fellow the below step for run the project
 
 ## ✒️ Author
 
-* **Developer** - //edfcbz@gmail.com
+* **Developer contact** - edfcbz@gmail.com
 
 ## 📄 License
 
