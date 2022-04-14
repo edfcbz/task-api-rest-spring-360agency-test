@@ -19,9 +19,12 @@ This project was developed using the best practices in API RESTFUll development.
 * 3 - **ServiceBO** In this layer are applied as business rules before the operations with the database, using a own repository data access class and other BO service classes. 
 
 ## ⚙️ UML Diagrams (Simplified)
-* 1 - ![image](https://user-images.githubusercontent.com/63114961/163382563-3935977b-05bf-430b-a3ab-93b65e12166b.png)
+* 1 - **Class Diagram
+![image](https://user-images.githubusercontent.com/63114961/163382563-3935977b-05bf-430b-a3ab-93b65e12166b.png)
 
- 
+* 2 - **Sequence Diagram
+ ![image](https://user-images.githubusercontent.com/63114961/163385585-6979664b-fffd-4f64-87a0-c976496f4161.png)
+
 
 
 ## 🚀 Starting
