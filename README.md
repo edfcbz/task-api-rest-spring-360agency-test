@@ -166,14 +166,18 @@ Suite Class
   * 3.1 -  Suite360AgenceTest.java class
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
-* 1 - <Class>
-   * 1.1 - Suggest 1
-   * 1.2 - Suggest 2
+* 1 - ListingServiceBO.java
+   * 1.1 - Methody 'public Listing update(Listing listing_)'
+     The methody need some improvements in logical and structure aspect. Improvements in Dealer's Listing limit test (published)
+   * 1.2 - Methody 'public Listing published(String listingId)'
+     With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
  
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
-* 1 - <Class>
-   * 1.1 - Suggest 1
-   * 1.2 - Suggest 2
+* 1 - ListingServiceBO.java
+   * 1.1 - Methody 'public Listing update(Listing listing_)'
+     The methody need some improvements in logical and structure aspect. Improvements in Dealer's Listing limit test (published)
+   * 1.2 - Methody 'public Listing published(String listingId)'
+     With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
