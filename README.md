@@ -160,18 +160,18 @@ As requirement, this project implemented JUnit test class for Dealer and Listing
 
 * 1 - **Dealer** endpoints. 
 * Path classes in src/test/java/br/com/edfcbz/endpoint/dealer package 'Run the classes as JUnit tes'.
-  * 1.1 - 'BaseClassAPITest.java class, conect with data base using user named leandro and password admin123. After that, receive a token to add in all request  
-  * 1.2 - The DealerEndpointDifferentMethodologiesTest.java Class, test the Dealer endpoint using different methologies in tests.
-  * 1.2 - The DealerEndpointTest.java class define the RestAssured given(), When() and Then() methologies
+  * 1.1 - The **BaseClassAPITest.java** class, conect with data base using user named leandro and password admin123. After that, receive a token to add in all request  
+  * 1.2 - The **DealerEndpointDifferentMethodologiesTest.java** Class, test the Dealer endpoint using different methologies in tests.
+  * 1.2 - The **DealerEndpointTest.java** class define the RestAssured given(), When() and Then() methologies
   
 * 2 - **Listing** endpoints 'Run the classes as JUnit tests'
 * Path classes in src/test/java/br/com/edfcbz/endpoint/listing package 
-  * 2.1 - The DealerEndpointTest.java test class verify different Business aspect, including Listing bi Dealer and State   
+  * 2.1 - The **DealerEndpointTest.java**** test class verify different Business aspect, including Listing bi Dealer and State   
 
 Suite Class
 * 3 - **Suite** This class test which runs all test class, been indicating before releases.
 * Path classes in src/test/java/br/com/edfcbz/endpoint/suite package  
-  * 3.1 -  Suite360AgenceTest.java class
+  * 3.1 -  **Suite360AgenceTest.java** class
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
 * **1 - ListingServiceBO.java**
@@ -180,6 +180,7 @@ Suite Class
    * 1.2 - Methody **public Listing published(String listingId)**
      With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
    * 1.3 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
+   * 1.4 - **Log** method Arguments, increase details, adding logged user
    
 * **2 - Exception Classes**
    * 1.1 - Generalize and reduce the number of exception classes. It will be important to adopt a handle class that will be responsible for returning the appropriate exception class for each case.
@@ -201,7 +202,7 @@ In general, it will be beneficial to deepen the level of tests performed, especi
 
 ## 📌 Version
 
-* Tags in https://github.com/edfcbz/task-api-rest-spring-360agency-test
+* Tags in **https://github.com/edfcbz/task-api-rest-spring-360agency-test**
 
 ## ✒️ Author
 
@@ -209,4 +210,4 @@ In general, it will be beneficial to deepen the level of tests performed, especi
 
 ## 📄 License
 
-* NA
+ **NA**
