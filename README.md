@@ -137,8 +137,8 @@ Fellow the below step for run the project
   * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
 * 3 - (SECOND OPTION) Creating new database
   * 3.1 - Remove the Database squema created before
-  * 3.2 - Execute the file ##CreatingDatabase360agency.sql## in Client SQL Tool (This step will create the data tests in Database squema) 
-  * 3.5 - Execute the file ##InsertDataTestInTables.sql## in Client SQL Tool (This step will create data in Squema Tables)  
+  * 3.2 - Execute the file ## CreatingDatabase360agency.sql ## in Client SQL Tool (This step will create the data tests in Database squema) 
+  * 3.5 - Execute the file ## InsertDataTestInTables.sql ## in Client SQL Tool (This step will create data in Squema Tables)  
 
 ## ⚙️ API RESTFul - Running Examples step by step
 * 1 - **Dealer** endpoints
