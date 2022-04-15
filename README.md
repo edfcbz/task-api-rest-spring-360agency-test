@@ -30,7 +30,7 @@ This project was developed using the best practices in API RESTFUll development.
  
  * 3 - **Class Test Diagram**
  
-![image](https://user-images.githubusercontent.com/63114961/163567524-ce9b9101-9ce0-489a-b66a-1f87d989282f.png)
+![image](https://user-images.githubusercontent.com/63114961/163567713-91ee2b81-a12a-44a0-a600-311e0519853e.png)
 
 ## 📋 Business
 * 1 - **Requirements**
