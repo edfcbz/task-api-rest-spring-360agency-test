@@ -69,9 +69,9 @@ Fellow the below step for run the project
 
 * 1 - Install and Run the MySQL Server (Default port)
 * 3 - Install and Run the HeidiSQL
-  * 3.1 - In HeidiSQL run CreateDataBaseAndData.sql file (This step will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
+  * 3.1 - In HeidiSQL run **CreatingDatabase360agency.sql** and **InsertDataTestInTables.sql** file (These steps will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
   * 3.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
-  * 3.3 - Verify if squema was created and tables has data 
+  * 3.3 - Verify if schema was created and tables has data 
 
 ## 🔧 Development Environment Setup - DEVELOPMENT
 
@@ -131,14 +131,14 @@ Fellow the below step for run the project
 ## 🚀 Starting JUnit Test Class
 ## Very Import Tip
 * 1 - Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
-* 2 - (FIRST OPTION) Access the Database SQUEMA and remove all informations using the command SQL below:
+* 2 - (FIRST OPTION) Access the Database SCHEMA and remove all informations using the command SQL below:
   * 2.1 - Clean Listing table: DELETE FROM Listing;
   * 2.2 - Clean Dealer Table: DELETE FROM Dealer;
   * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
 * 3 - (SECOND OPTION) Creating new database
-  * 3.1 - Remove the Database squema created before
-  * 3.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database squema) 
-  * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Squema Tables)  * 3 - * 3 - 
+  * 3.1 - Remove the Database schema created before
+  * 3.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database schema) 
+  * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Schema Tables)  * 3 - * 3 - 
 * 4 - Run the Sturtup.java class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
 
 ## ⚙️ API RESTFul - Running Examples
