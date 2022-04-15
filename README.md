@@ -166,18 +166,22 @@ Suite Class
   * 3.1 -  Suite360AgenceTest.java class
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
-* 1 - ListingServiceBO.java
-   * 1.1 - Methody 'public Listing update(Listing listing_)'
-     The methody need some improvements in logical and structure aspect. Improvements in Dealer's Listing limit test (published)
-   * 1.2 - Methody 'public Listing published(String listingId)'
+* **1 - ListingServiceBO.java**
+   * 1.1 - Method **public Listing update(Listing listing_)**
+     The methody need some improvements in logical and structural aspect. Improvements in Dealer's Listing limit test (published)
+   * 1.2 - Methody **public Listing published(String listingId)**
      With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
- 
+   * 1.3 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
+   
+* **2 - Exception Classes**
+   * 1.1 - Generalize and reduce the number of exception classes. It will be important to adopt a handle class that will be responsible for returning the appropriate exception class for each case.
+
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
-* 1 - ListingServiceBO.java
-   * 1.1 - Methody 'public Listing update(Listing listing_)'
-     The methody need some improvements in logical and structure aspect. Improvements in Dealer's Listing limit test (published)
-   * 1.2 - Methody 'public Listing published(String listingId)'
-     With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
+* 1 - ListingEndpointTest.java
+   * 1.1 - Method **public Listing update(Listing listing_)**
+   * 1.2 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
+   * 1.3 - Method **public void verifyDealerQuantity()**
+In general, it will be beneficial to deepen the level of tests performed, especially when the returned object has a list in its body, such as, for example, the draft or published ads of a specific dealer
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
