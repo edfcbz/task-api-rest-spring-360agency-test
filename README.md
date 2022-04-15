@@ -21,15 +21,13 @@ This project was developed using the best practices in API RESTFUll development.
 
 ## ⚙️ UML Diagrams (Simplified)
 * 1 - **Class Diagram**
-
 ![image](https://user-images.githubusercontent.com/63114961/163382563-3935977b-05bf-430b-a3ab-93b65e12166b.png)
 
 * 2 - **Sequence Diagram**
-
  ![image](https://user-images.githubusercontent.com/63114961/163385585-6979664b-fffd-4f64-87a0-c976496f4161.png)
  
  * 3 - **Class Test Diagram**
- 
+![image](https://user-images.githubusercontent.com/63114961/163567524-ce9b9101-9ce0-489a-b66a-1f87d989282f.png)
 
 ## 📋 Business
 * 1 - **Requirements**
