@@ -150,8 +150,10 @@ Fellow the below step for run the project
 
 
 * 2 - **Listing** endpoints
-  * 2.1 - Request GET http://localhost:8080/listing/dealerid/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/state/published **BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them
-  * 
+  * 2.1 - Request GET http://localhost:8080/listing/dealerid/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/state/published 
+![image](https://user-images.githubusercontent.com/63114961/163650117-35bbb03f-195a-4c62-bb6b-2221722ff156.png)
+</br>**BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them
+   
 
 ## ⚙️ API RESTFul Test - Running Examples
 As requirement, this project implemented JUnit test class for Dealer and Listing Service. Some tips are descrited below.
