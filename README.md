@@ -133,7 +133,7 @@ Fellow the below step for run the project
 * 1 - Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
 * 2 - (FIRST OPTION) Access the Database SQUEMA and remove all informations using the command SQL below:
   * 2.1 - Clean Listing table: DELETE FROM Listing;
-  * 2.2 - Clean Dealer Table: DELETE FROM DEALER;
+  * 2.2 - Clean Dealer Table: DELETE FROM Dealer;
   * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
 * 3 - (SECOND OPTION) Creating new database
   * 3.1 - Remove the Database squema created before
