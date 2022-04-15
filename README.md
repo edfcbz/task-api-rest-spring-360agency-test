@@ -141,10 +141,13 @@ Fellow the below step for run the project
   * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Squema Tables)  * 3 - * 3 - 
 * 4 - Run the Sturtup.java class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
 
-## ⚙️ API RESTFul - Running Examples step by step
+## ⚙️ API RESTFul - Running Examples
 * 1 - **Dealer** endpoints
-  * 1.1 - Find all Dealer
-  *
+  * 1.1 - http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd
+
+![image](https://user-images.githubusercontent.com/63114961/163649865-080a5c3d-a04e-4e2a-a840-f1496b78b66b.png) This endpoint return all Dealer's Listing using Dealer Identifications as parameter in URL. See image for details
+
+
 * 2 - **Listing** endpoints
   * 2.1 - Request GET http://localhost:8080/listing/dealerid/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/state/published **BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them
   * 
