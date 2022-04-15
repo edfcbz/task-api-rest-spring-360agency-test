@@ -146,7 +146,7 @@ Fellow the below step for run the project
   * 1.1 - http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd
 
 ![image](https://user-images.githubusercontent.com/63114961/163649865-080a5c3d-a04e-4e2a-a840-f1496b78b66b.png) 
-This endpoint return all Dealer's Listing using Dealer Identifications as parameter in URL. See image for details
+</br>This endpoint return all Dealer's Listing using Dealer Identifications as parameter in URL. See image for details
 
 
 * 2 - **Listing** endpoints
