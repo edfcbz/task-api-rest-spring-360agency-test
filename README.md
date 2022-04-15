@@ -138,15 +138,32 @@ Fellow the below step for run the project
 * 3 - (SECOND OPTION) Creating new database
   * 3.1 - Remove the Database squema created before
   * 3.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database squema) 
-  * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Squema Tables)  
+  * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Squema Tables)  * 3 - * 3 - 
+* 4 - Run the Sturtup.java class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
 
 ## ⚙️ API RESTFul - Running Examples step by step
 * 1 - **Dealer** endpoints
-  * 1.1 - Find all Dealer 
+  * 1.1 - Find all Dealer
+  *
+* 2 - **Listing** endpoints
 
-## ⚙️ API RESTFul Test - Running Examples step by step
-* 1 - **Dealer** endpoints
-  * 1.1 - Find all Dealer 
+## ⚙️ API RESTFul Test - Running Examples
+As requirement, this project implemented JUnit test class for Dealer and Listing Service. Some tips are descrited below.
+
+* 1 - **Dealer** endpoints. 
+* Path classes in src/test/java/br/com/edfcbz/endpoint/dealer package 'Run the classes as JUnit tes'.
+  * 1.1 - 'BaseClassAPITest.java class, conect with data base using user named leandro and password admin123. After that, receive a token to add in all request  
+  * 1.2 - The DealerEndpointDifferentMethodologiesTest.java Class, test the Dealer endpoint using different methologies in tests.
+  * 1.2 - The DealerEndpointTest.java class define the RestAssured given(), When() and Then() methologies
+  
+* 2 - **Listing** endpoints 'Run the classes as JUnit tests'
+* Path classes in src/test/java/br/com/edfcbz/endpoint/listing package 
+  * 2.1 - The DealerEndpointTest.java test class verify different Business aspect, including Listing bi Dealer and State   
+
+Suite Class
+* 3 - **Suite** This class test which runs all test class, been indicating before releases.
+* Path classes in src/test/java/br/com/edfcbz/endpoint/suite package  
+  * 3.1 -  Suite360AgenceTest.java class
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
 * 1 - <Class>
