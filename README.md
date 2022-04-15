@@ -144,7 +144,7 @@ Fellow the below step for run the project
 * 1 - **Dealer** endpoints
   * 1.1 - Find all Dealer 
 
-## ⚙️ API RESTFul Test- Running Examples step by step
+## ⚙️ API RESTFul Test - Running Examples step by step
 * 1 - **Dealer** endpoints
   * 1.1 - Find all Dealer 
 
