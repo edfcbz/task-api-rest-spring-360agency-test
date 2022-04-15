@@ -128,8 +128,17 @@ Fellow the below step for run the project
   * 2.8 - UPDATE request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
   * 2.9 - DELETE request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
 
-## 🚀 Starting Getting Started with Endpoints
-## Very Import Tip: Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
+## 🚀 Starting JUnit Test Class
+## Very Import Tip
+* 1 - Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
+* 2 - (FIRST OPTION) Acess the Database SQUEMA and remove all informations using the command SQL below:
+  * 2.1 - Clean Listing table: DELETE FROM Listing;
+  * 2.2 - Clean Dealer Table: DELETE FROM DEALER;
+  * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
+* 3 - (SECOND OPTION) Creating new database
+  * 3.1 - Remove the Database squema created before
+  * 3.2 - Execute the file ##CreatingDatabase360agency.sql## in Client SQL Tool (This step will create the data tests in Database squema) 
+  * 3.5 - Execute the file ##InsertDataTestInTables.sql## in Client SQL Tool (This step will create data in Squema Tables)  
 
 ## ⚙️ API RESTFul - Running Examples step by step
 * 1 - **Dealer** endpoints
