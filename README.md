@@ -45,8 +45,9 @@ This project was developed using the best practices in API RESTFUll development.
   * 1.6 - **Tests**
 
 * 2 - **Functionality**
-  * 2.1 - **Listing:** Create, Update, Get all listings of a dealer with a given state, Publish a listing
-  * 2.1 - **Car Dealer:**  
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, publish and unpublish a listing, **update (publishing) the oldest and removing one**.
+  
+  * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
 * 3 - **Rules**
   * 2.1 - **Car Dealer** - An owner of the advertisement
