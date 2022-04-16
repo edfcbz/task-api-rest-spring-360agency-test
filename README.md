@@ -46,13 +46,13 @@ This project was developed using the best practices in API RESTFUll development.
   * 1.6 - **Tests**
 
 * 2 - **Functionality**
-  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, publish and unpublish a listing, **update (publishing) the oldest and removing one**.
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, **publish** and **unpublish** a listing, **update (publishing) the oldest and removing one**.
   
   * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
 * 3 - **Rules**
-  * 3.1 - **Car Dealer** - An owner of the advertisement
-  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest
+  * 3.1 - **Car Dealer** - Must have the maximum number of published Listings 
+  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest (If selected apropriated endpoint )
 
 ## 🛠️ Tools Technical Requirements
 
@@ -61,7 +61,7 @@ This project was developed using the best practices in API RESTFUll development.
 * 3 - IDE Development. The project was developed Eclipse Version: 2020-06 (4.16.0) Build id: 20200615-1200
 * 4 - The source code from https://github.com/edfcbz/task-api-rest-spring-360agency-test
 * 5 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
-* 6 - Http request tool as Postman  
+* 6 - Http request tool as Postman or similar  
 
 
 ## 🚀 Starting Database and Environment
@@ -79,7 +79,7 @@ Fellow the below step for run the project
 
 * 1 - Run Eclipse and Import the project as "Existing Maven Project" option
 * 2 - In Eclipse menu select Project -> Clean
-* 3 - Open package br.com.edfcbz and locate Statup.java file. Run it as Java Application. The TomCat server will run at 8080 port
+* 3 - Open package br.com.edfcbz and locate **Statup.java** file. Run it as Java Application. The TomCat server will run at 8080 port
   * 3.1 - Tips: If the Eclipse console show the message "Caused by: java.net.BindException: Address already in use: bind", finalize the service in 8080 port as showed
   * 3.2 - Run CMD as Administrator and type de command line: C:\>netstat -a -n -o | findstr :8080 (This command will show a line as:
           *TCP 0.0.0.0:8080 0.0.0.0:0 LISTENING 8457 (In this example 8457 is the PID process)
@@ -102,7 +102,7 @@ Fellow the below step for run the project
 
 * 2 - Requesting a TomCat service
   * 1.0 - Select a GET request and type http://localhost:8080
-  * 1.1 - In Header section create a new Authorization key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
+  * 1.1 - In Header section create or modify a  **Authorization** key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
   * 1.2 - Select SEND button. You will receive all a list with services available, as showed in image below. So, your enviroment is running...
 
 ![image](https://user-images.githubusercontent.com/63114961/163140854-fb7691cd-cd45-412b-8c78-c5fd09df6046.png)
@@ -132,29 +132,59 @@ Fellow the below step for run the project
 
 ## 🚀 Starting JUnit Test Class
 ## Very Import Tip
-* 1 - Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
-* 2 - (FIRST OPTION) Access the Database SCHEMA and remove all informations using the command SQL below:
+* 1 - **Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
+* 2 - **(Defoult OPTION)** Access the Database SCHEMA and remove all informations using the command SQL below:
   * 2.1 - Clean Listing table: DELETE FROM Listing;
   * 2.2 - Clean Dealer Table: DELETE FROM Dealer;
   * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
-* 3 - (SECOND OPTION) Creating new database
+* 3 - **(Another OPTION)** Creating new database
   * 3.1 - Remove the Database schema created before
   * 3.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database schema) 
-  * 3.5 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Schema Tables)  * 3 - * 3 - 
-* 4 - Run the Sturtup.java class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
+  * 3.4 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Schema Tables)
+* 4 - Run the **Sturtup.java** class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
 
 ## ⚙️ API RESTFul - Running Examples
-* 1 - **Dealer** endpoints
-  * 1.1 - http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd
+* 1 - **Dealer** endpoints 
+  * 1.1 - Resquet type GET http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd (This endpoint return Dealer details and all Listing related. See image below for details)
 
-![image](https://user-images.githubusercontent.com/63114961/163649865-080a5c3d-a04e-4e2a-a840-f1496b78b66b.png) 
-</br>This endpoint return all Dealer's Listing using Dealer Identifications as parameter in URL. See image for details
+![image](https://user-images.githubusercontent.com/63114961/163675037-9894b3ef-c1b2-4d02-b137-061e75f36281.png)</br>
+
+  * 1.2 - Resquet type GET http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/**draft** or /**published** (This endpoint return a specific Dealer using dealerId and Listing by state. In this case **draft**  ( See images below )
+  
+![image](https://user-images.githubusercontent.com/63114961/163675139-e3352bbd-4548-4a1c-af42-08056d8d596d.png)
 
 
-* 2 - **Listing** endpoints
+  * 1.3 - Resquet type GET http://localhost:8080/dealer/name/dealer 1 (Shows a list af all Dealer which has "dealer 1" inside name) ( See images below )
+
+![image](https://user-images.githubusercontent.com/63114961/163675216-805ff0b2-f8dd-4b69-b49d-6e8e0e00649c.png)
+
+  * 1.4 - Resquet type POST http://localhost:8080/dealer (Will add a new Dealer registry in Database, before add the personal information in body section as below ) 
+  
+![image](https://user-images.githubusercontent.com/63114961/163675433-e92248c5-58d7-49b7-a191-f7dc042e6c38.png)</br>
+The API will return the Dealer created (See Image below for details)
+
+![image](https://user-images.githubusercontent.com/63114961/163675480-5b04d518-40b0-442c-b018-571504967319.png)</br>
+Verify the correct behavior sending a GET request findById as 1.1 Step Above, bus informing the id returned in 1.4 step above too. The result will be similar like below  image
+
+![image](https://user-images.githubusercontent.com/63114961/163675613-482bce0d-e4d3-4a98-a627-7ec268bd0a2e.png)
+
+  * 1.5 - Resquet type PUT http://localhost:8080/dealer  (Will update the Dealer information registred in Database, before add the personal information in body section as below )
+  
+  ![image](https://user-images.githubusercontent.com/63114961/163675694-d3e5ca50-515b-4210-8217-0498e5ba10cf.png)</br>
+This operation will update the Dealer name and Limit os Listing state as published. The update return is showed in image below for details
+
+![image](https://user-images.githubusercontent.com/63114961/163675765-e6be55ab-b47e-4eae-b971-b249e82646a6.png)</br>
+The Dealer name and Limit Listing as published were modified
+
+
+* 2 - **Listing** endpoints (Using data of initial setup and the new Dealer added above )
   * 2.1 - Request GET http://localhost:8080/listing/dealerid/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/state/published 
-![image](https://user-images.githubusercontent.com/63114961/163650117-35bbb03f-195a-4c62-bb6b-2221722ff156.png)
-</br>**BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them
+![image](https://user-images.githubusercontent.com/63114961/163650117-35bbb03f-195a-4c62-bb6b-2221722ff156.png)</br>
+**BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them</br>
+
+  * 2.2 - Request GET http://localhost:8080/listing (Will show all Listing from database - See image below for details about one of them. 2 Registry from 5)
+![image](https://user-images.githubusercontent.com/63114961/163676004-beab6f59-38c3-4b31-b556-a143e1d0bc34.png)</br>
+
    
 
 ## ⚙️ API RESTFul Test - Running Examples
@@ -196,11 +226,15 @@ Suite Class
    * 1.2 - Currently shown it on the console. Add save-to-file behavior
 
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
-* 1 - ListingEndpointTest.java
+**(Functional Test)** Status: Developed
+* 1 - ListingEndpointTest.java 
    * 1.1 - Method **public Listing update(Listing listing_)**
    * 1.2 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
    * 1.3 - Method **public void verifyDealerQuantity()**
 In general, it will be beneficial to deepen the level of tests performed, especially when the returned object has a list in its body, such as, for example, the draft or published ads of a specific dealer
+
+**(Coverage Test)** Status: Technical debt (Not developed)
+**(Unit Test)** Status: Technical debt (Not developed)
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
