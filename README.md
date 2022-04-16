@@ -176,6 +176,9 @@ This operation will update the Dealer name and Limit os Listing state as publish
 ![image](https://user-images.githubusercontent.com/63114961/163675765-e6be55ab-b47e-4eae-b971-b249e82646a6.png)</br>
 The Dealer name and Limit Listing as published were modified
 
+Request DELETE http://localhost:8080/dealer/{dealerId} (This endpoint will remove the Dealer if doesn't have Listing. If has, the operation will fail and API will return an Exception. See details below )</br>
+![image](https://user-images.githubusercontent.com/63114961/163677242-9c2f9984-46d6-4680-9cb0-197692a74dda.png)
+
 
 * 2 - **Listing** endpoints (Using data of initial setup and the new Dealer added above )
   * 2.1 - Request GET http://localhost:8080/listing/dealerid/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/state/published 
@@ -184,6 +187,25 @@ The Dealer name and Limit Listing as published were modified
 
   * 2.2 - Request GET http://localhost:8080/listing (Will show all Listing from database - See image below for details about one of them. 2 Registry from 5)</br>
 ![image](https://user-images.githubusercontent.com/63114961/163676004-beab6f59-38c3-4b31-b556-a143e1d0bc34.png)</br>
+
+  * 2.3 - Request POST  http://localhost:8080/listing (Will add a new Listing for Dealer created in Dealer 1.4 step above. The information about Listing must be in Body section of request as showed in image below )</br>
+  ![image](https://user-images.githubusercontent.com/63114961/163676975-a6b8d65c-cac8-4e9a-8b7c-4c8df4a8e2a1.png)</br>
+
+The result will be similar at image below. **As default the Listing state is draft** See the details</br>
+![image](https://user-images.githubusercontent.com/63114961/163676993-a31f501c-c0cd-4b8d-99a7-2037cf1be140.png)</nr>
+
+  * 2.3 - Request PUT http://localhost:8080/listing  (The endpoint will modify the Listing created in 2.3 step Above. The Listing data must be in body section as below)</br>
+![image](https://user-images.githubusercontent.com/63114961/163677115-64002a05-fb8f-4814-9609-e97bbd65fc5f.png)</br>
+The API will return the Listing updated. See image below for details</br>
+![image](https://user-images.githubusercontent.com/63114961/163677143-2137e8f8-4755-4a65-8069-177232e23c76.png)
+
+  * 2.4 - Request DELETE http://localhost:8080/listing/3bed1f91-38ec-48df-86a2-19dd1ac905ce (The API will return 200 as status code)</br>
+
+
+
+
+
+  
 
    
 
