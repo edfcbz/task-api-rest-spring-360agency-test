@@ -50,8 +50,8 @@ This project was developed using the best practices in API RESTFUll development.
   * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
 * 3 - **Rules**
-  * 2.1 - **Car Dealer** - An owner of the advertisement
-
+  * 3.1 - **Car Dealer** - An owner of the advertisement
+  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest
 
 ## 🛠️ Tools Technical Requirements
 
@@ -177,14 +177,18 @@ Suite Class
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
 * **1 - ListingServiceBO.java**
    * 1.1 - Method **public Listing update(Listing listing_)**
-     The methody need some improvements in logical and structural aspect. Improvements in Dealer's Listing limit test (published)
+     This method need some improvements in logical and structural aspect. Improvements in Dealer's Listing limit test (published)
    * 1.2 - Methody **public Listing published(String listingId)**
      With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
    * 1.3 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
    * 1.4 - **Log** method Arguments, increase details, adding logged user
-   
-* **2 - Exception Classes**
-   * 1.1 - Generalize and reduce the number of exception classes. It will be important to adopt a handle class that will be responsible for returning the appropriate exception class for each case.
+
+* **2 - DealerServiceBO.java**
+   * 2.1 - Method **public Dealer update(Dealer _dealer)**
+   * This method need improvements during Limit updating. This service not verify the Listing state as published yet ( Known bug )
+
+* **3 - Exception Classes**
+   * 3.1 - Generalize and reduce the number of exception classes. It will be important to adopt a handle class that will be responsible for returning the appropriate exception class for each case.
 
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
 * 1 - ListingEndpointTest.java
