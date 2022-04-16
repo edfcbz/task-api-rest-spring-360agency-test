@@ -181,7 +181,7 @@ Suite Class
    * 1.2 - Methody **public Listing published(String listingId)**
      With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
    * 1.3 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
-   * 1.4 - **Log** method Arguments, increase details, adding logged user
+
 
 * **2 - DealerServiceBO.java**
    * 2.1 - Method **public Dealer update(Dealer _dealer)**
@@ -189,6 +189,10 @@ Suite Class
 
 * **3 - Exception Classes**
    * 3.1 - Generalize and reduce the number of exception classes. It will be important to adopt a handle class that will be responsible for returning the appropriate exception class for each case.
+
+## 📋 LOG - Review Technical Aspect and Improvement Suggestions
+   * 1.1 - Increase details, adding logged user inside message
+   * 1.2 - Currently shown it on the console. Add save-to-file behavior
 
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
 * 1 - ListingEndpointTest.java
