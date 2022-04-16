@@ -1,6 +1,6 @@
 # This repository has a RESTFul API for Dealer and Listing entities
 
-This project implements the use of a RESTFull API for Dealer and his/her Listing, inclusing supports the Controller Class for a complete and customized CRUD operations
+This project implements the use, test and log functionalities of the RESTFull API for Dealer and Listing entities, with supports for basic and customized CRUD operations. With different sections, this document define all details of project and how use it. If you have any question about topics below, let me know by email informed in boton of this document. Thank you !
 
 ## ⚙️ Main Technologies
 * 1 - **String** Boot, Security and Data
@@ -13,7 +13,7 @@ This project implements the use of a RESTFull API for Dealer and his/her Listing
 * 8 - **REST Assured** Testing and validating REST services
 * 9 - **Hamcrast** Testing and validating REST services
 
-## ⚙️ Architecture
+## ⚙️ Architecture ( MVC Pattern )
 This project was developed using the best practices in API RESTFUll development. The layers that make up the solution are listed and described below
 * 1 - **Controller** In addition to implementing the endpoints for the services provided by the entity, this layer is responsible for converting the requests made in XML, JSON and YAML format to the format accepted by the backend and also converting responses to the format desired by the API user. 
 * 2 - **ServiceVO** Responsible for converting VO class objects to entity classes recognized by the business layer. The VO layer implementation allows modifying the attributes of the inner classes for the user consuming the API. This new mapping increases the security of the application by hiding the real attributes of the business classes.
@@ -36,9 +36,9 @@ This project was developed using the best practices in API RESTFUll development.
 * 1 - **Requirements**
   * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)</br>
            * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
-  * 1.2 - **Car Dealer** - An owner of the advertisement
-           * 1.2.1 - **Atributes** id: uuid, name: String
-           * 1.2.2 - **Tier Limit** A number of published listings a dealer can have online 
+  * 1.2 - **Car Dealer** - An owner of the advertisement</br>
+           * 1.2.1 - **Atributes** id: uuid, name: String</br>
+           * 1.2.2 - **Tier Limit** A number of published listings a dealer can have online </br>
   * 1.3 - **Logs**
   * 1.4 - **Exception handling**
   * 1.5 - **Documentation**
