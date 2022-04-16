@@ -182,7 +182,7 @@ The Dealer name and Limit Listing as published were modified
 ![image](https://user-images.githubusercontent.com/63114961/163650117-35bbb03f-195a-4c62-bb6b-2221722ff156.png)</br>
 **BUSINESS REQUIREMENT** This endpoint implements the Business Requirement, searching and returning all Listing of a Dealer and state of them</br>
 
-  * 2.2 - Request GET http://localhost:8080/listing (Will show all Listing from database - See image below for details about one of them. 2 Registry from 5)
+  * 2.2 - Request GET http://localhost:8080/listing (Will show all Listing from database - See image below for details about one of them. 2 Registry from 5)</br>
 ![image](https://user-images.githubusercontent.com/63114961/163676004-beab6f59-38c3-4b31-b556-a143e1d0bc34.png)</br>
 
    
