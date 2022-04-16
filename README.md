@@ -200,32 +200,26 @@ The API will return the Listing updated. See image below for details</br>
 ![image](https://user-images.githubusercontent.com/63114961/163677143-2137e8f8-4755-4a65-8069-177232e23c76.png)
 
   * 2.4 - Request DELETE http://localhost:8080/listing/3bed1f91-38ec-48df-86a2-19dd1ac905ce (The API will return 200 as status code)</br>
-
-
-
-
-
-  
-
    
 
 ## ⚙️ API RESTFul Test - Running Examples
 As requirement, this project implemented JUnit test class for Dealer and Listing Service. Some tips are descrited below.
 
-* 1 - **Dealer** endpoints. 
-* Path classes in src/test/java/br/com/edfcbz/endpoint/dealer package 'Run the classes as JUnit tes'.
-  * 1.1 - The **BaseClassAPITest.java** class, conect with data base using user named leandro and password admin123. After that, receive a token to add in all request  
-  * 1.2 - The **DealerEndpointDifferentMethodologiesTest.java** Class, test the Dealer endpoint using different methologies in tests.
-  * 1.2 - The **DealerEndpointTest.java** class define the RestAssured given(), When() and Then() methologies
+* 1 - **The Test Classes** 
+  * 1.1 - The class **BaseClassAPITest.java** conect with data base using user named leandro and password admin123. After that, receive a token to add in all request. Is not necessary running this class. It will run automatically on each test  
+  * 1.2 - The class **DealerEndpointDifferentMethodologiesTest.java** tests the Dealer endpoint using different test methologies.
+  * 1.3 - The class **DealerEndpointTest.java** define the RestAssured given(), When() and Then() methologies
+  * 1.4 - The class **ListingEndpointTest.java** test different business aspect 
   
-* 2 - **Listing** endpoints 'Run the classes as JUnit tests'
-* Path classes in src/test/java/br/com/edfcbz/endpoint/listing package 
-  * 2.1 - The **DealerEndpointTest.java**** test class verify different Business aspect, including Listing bi Dealer and State   
+* 2 - **Test Classes**
+  * 2.1 - Path classes in src/test/java/br/com/edfcbz/endpoint/dealer package (Run all files as JUnit test)
+  * 2.2 - Path classes in src/test/java/br/com/edfcbz/endpoint/listing package (Run all files as JUnit test)
 
-Suite Class
-* 3 - **Suite** This class test which runs all test class, been indicating before releases.
-* Path classes in src/test/java/br/com/edfcbz/endpoint/suite package  
-  * 3.1 -  **Suite360AgenceTest.java** class
+* 3 - **Suite Test**
+  * 3.1 -  The **Suite360AgenceTest.java** class will run all test classes from project. For this, go to path src/test/java/br/com/edfcbz/endpoint/dealer package (Run file as JUnit test). The final result looks like the image below.</br>
+
+![image](https://user-images.githubusercontent.com/63114961/163678283-3890d531-1806-4237-86b1-74324688879f.png)
+
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
 * **1 - ListingServiceBO.java**
