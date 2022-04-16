@@ -70,10 +70,10 @@ Fellow the below step for run the project
 ## 🔧 Development Environment Setup - DATABASE
 
 * 1 - Install and Run the MySQL Server (Default port)
-* 3 - Install and Run the HeidiSQL
-  * 3.1 - In HeidiSQL run **CreatingDatabase360agency.sql** and **InsertDataTestInTables.sql** file (These steps will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
-  * 3.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
-  * 3.3 - Verify if schema was created and tables has data 
+* 2 - Install and Run the HeidiSQL
+  * 2.1 - In HeidiSQL run **CreatingDatabase360agency.sql** and **InsertDataTestInTables.sql** file (These steps will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
+  * 2.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
+  * 2.3 - Verify if schema was created and tables has data 
 
 ## 🔧 Development Environment Setup - DEVELOPMENT
 
@@ -89,59 +89,59 @@ Fellow the below step for run the project
 
 ## ⚙️ Testing environment
 * 1 - Requesting a token (Security Layer)
-  * 1.0 - Run Postman
-  * 1.1 - Select a POST request and type http://localhost:8080/auth/signin
-  * 1.2 - In Body section type: {
+  * 1.1 - Run Postman
+  * 1.2 - Select a POST request and type http://localhost:8080/auth/signin
+  * 1.3 - In Body section type: {
                           "username":"leandro",
                           "password":"admin123"
                         }
-  * 1.3 - Select SEND button (You will receive a message with a token as below)
+  * 1.4 - Select SEND button (You will receive a message with a token as below)
   ![image](https://user-images.githubusercontent.com/63114961/163141178-e52010dc-74a7-44c4-9e02-ce4680aafaf5.png)
 
-  * 1.4 - Copy the token returned without ""
+  * 1.5 - Copy the token returned without ""
 
 * 2 - Requesting a TomCat service
-  * 1.0 - Select a GET request and type http://localhost:8080
-  * 1.1 - In Header section create or modify a  **Authorization** key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
-  * 1.2 - Select SEND button. You will receive all a list with services available, as showed in image below. So, your enviroment is running...
+  * 2.0 - Select a GET request and type http://localhost:8080
+  * 2.1 - In Header section create or modify a  **Authorization** key with value: Bearer <paste here token received in step 1.3>. Tip: There is just one empty space between Bearer and token
+  * 2.2 - Select SEND button. You will receive all a list with services available, as showed in image below. So, your enviroment is running...
 
 ![image](https://user-images.githubusercontent.com/63114961/163140854-fb7691cd-cd45-412b-8c78-c5fd09df6046.png)
 
 
 ## ⚙️ API RESTFul - Endpoints list and general informations
 * 1 - **Dealer** endpoints
-  * 1.0 - GET request for http://localhost:8080/dealer ( Show all Dealer registered in the Database )
-  * 1.1 - GET request for http://localhost:8080/dealer/{dealerId} ( Show the Dealer details according **dealerId** informed and all Listing related )
+  * 1.1 - GET request for http://localhost:8080/dealer ( Show all Dealer registered in the Database )
+  * 1.2 - GET request for http://localhost:8080/dealer/{dealerId} ( Show the Dealer details according **dealerId** informed and all Listing related )
   * 1.3 - GET request for http://localhost:8080/dealer/{dealerId}/{listingState} ( Show the Dealer by dealerId and Listing registered by listingState )
   * 1.4 - GET request for http://localhost:8080/dealer/name/{dealerName} ( Lists all dealers whose names match with the parameter, fully or not ) 
   * 1.5 - DELETE request for http://localhost:8080/dealer/{dealerId} ( Delete Dealers by identification match with the parameter ) 
-  * 1.5 - UPDATE request for http://localhost:8080/dealer ( Update the Dealer informed in  Body section using **dealerId** as key )
-  * 1.6 - POST request for http://localhost:8080/dealer ( Save the Dealer informed in  Body section )
+  * 1.6 - UPDATE request for http://localhost:8080/dealer ( Update the Dealer informed in  Body section using **dealerId** as key )
+  * 1.7 - POST request for http://localhost:8080/dealer ( Save the Dealer informed in  Body section )
 
 * 2 - **Listing** endpoints 
-  * 2.0 - GET request for http://localhost:8080/listing  ( Show all Listing registered in the Database )
-  * 2.1 - GET request for http://localhost:8080/listing/{listingId} ( Show the Listing details according **listingId** informed and all Listing related )
-  * 2.2 - GET request for http://localhost:8080/listing/description/{descriptionVehicle} ( Show all Listing whose **vehicle** atribute match with  **descriptionVehicle** parameter )
-  * 2.3 - GET request for http://localhost:8080/listing/state/{stateListing} ( Show all Listing whose **state** atribute match with  **stateListing**  parameter)
-  * 2.4 - GET request for http://localhost:8080/listing/dealerid/{dealerId} ( Show all Listing whose **dealerid** atribute match with  **dealerId**  parameter)
-  * 2.5 - GET request for http://localhost:8080/listing/dealerid/{dealerId}/state/{stateListing} ( Show all Listing whose **dealerid** atribute match with  **dealerId** and  **state** atribute match with  **stateListing** parameter)
-  * 2.6 - POST request for http://localhost:8080/listing ( Save the Dealer informed in  Body section )
-  * 2.7 - POST request for http://localhost:8080/listing/overwriting ( Save the Listing informed in Body section removing the oldest registre if limit was reached )
-  * 2.8 - UPDATE request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
-  * 2.9 - DELETE request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
+  * 2.1 - GET request for http://localhost:8080/listing  ( Show all Listing registered in the Database )
+  * 2.2 - GET request for http://localhost:8080/listing/{listingId} ( Show the Listing details according **listingId** informed and all Listing related )
+  * 2.3 - GET request for http://localhost:8080/listing/description/{descriptionVehicle} ( Show all Listing whose **vehicle** atribute match with  **descriptionVehicle** parameter )
+  * 2.4 - GET request for http://localhost:8080/listing/state/{stateListing} ( Show all Listing whose **state** atribute match with  **stateListing**  parameter)
+  * 2.5 - GET request for http://localhost:8080/listing/dealerid/{dealerId} ( Show all Listing whose **dealerid** atribute match with  **dealerId**  parameter)
+  * 2.6 - GET request for http://localhost:8080/listing/dealerid/{dealerId}/state/{stateListing} ( Show all Listing whose **dealerid** atribute match with  **dealerId** and  **state** atribute match with  **stateListing** parameter)
+  * 2.7 - POST request for http://localhost:8080/listing ( Save the Dealer informed in  Body section )
+  * 2.8 - POST request for http://localhost:8080/listing/overwriting ( Save the Listing informed in Body section removing the oldest registre if limit was reached )
+  * 2.9 - UPDATE request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
+  * 2.10 - DELETE request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
 
 ## 🚀 Starting JUnit Test Class
-## Very Import Tip
-* 1 - **Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
-* 2 - **(Defoult OPTION)** Access the Database SCHEMA and remove all informations using the command SQL below:
-  * 2.1 - Clean Listing table: DELETE FROM Listing;
-  * 2.2 - Clean Dealer Table: DELETE FROM Dealer;
-  * 2.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
-* 3 - **(Another OPTION)** Creating new database
-  * 3.1 - Remove the Database schema created before
-  * 3.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database schema) 
-  * 3.4 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Schema Tables)
-* 4 - Run the **Sturtup.java** class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
+## VERY IMPORTANT Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
+
+* 1 - **(Defoult OPTION)** Access the Database SCHEMA and remove all informations using the command SQL below:
+  * 1.1 - Clean Listing table: DELETE FROM Listing;
+  * 1.2 - Clean Dealer Table: DELETE FROM Dealer;
+  * 1.3 - Execute the file InsertDataTestInTables.sql in Client SQL Tool (This step will create the data tests in Database squema)
+* 2 - **(Another OPTION)** Creating new database
+  * 2.1 - Remove the Database schema created before
+  * 2.2 - Execute the SQL file "CreatingDatabase360agency.sql" in Client SQL Tool (This step will create the data tests in Database schema) 
+  * 2.4 - Execute the SQL file "InsertDataTestInTables.sql" in Client SQL Tool (This step will create data in Schema Tables)
+* 3 - Run the **Sturtup.java** class as java application. This file is located in br.com.edfcbz project package or repeat the "Testing environment" section 
 
 ## ⚙️ API RESTFul - Running Examples
 * 1 - **Dealer** endpoints 
@@ -152,7 +152,6 @@ Fellow the below step for run the project
   * 1.2 - Resquet type GET http://localhost:8080/dealer/ae8e9b8b-5a84-4140-84bd-f6e6ea1f57cd/**draft** or /**published** (This endpoint return a specific Dealer using dealerId and Listing by state. In this case **draft**  ( See images below )
   
 ![image](https://user-images.githubusercontent.com/63114961/163675139-e3352bbd-4548-4a1c-af42-08056d8d596d.png)
-
 
   * 1.3 - Resquet type GET http://localhost:8080/dealer/name/dealer 1 (Shows a list af all Dealer which has "dealer 1" inside name) ( See images below )
 
@@ -194,12 +193,12 @@ Request DELETE http://localhost:8080/dealer/{dealerId} (This endpoint will remov
 The result will be similar at image below. **As default the Listing state is draft** See the details</br>
 ![image](https://user-images.githubusercontent.com/63114961/163676993-a31f501c-c0cd-4b8d-99a7-2037cf1be140.png)</nr>
 
-  * 2.3 - Request PUT http://localhost:8080/listing  (The endpoint will modify the Listing created in 2.3 step Above. The Listing data must be in body section as below)</br>
+  * 2.4 - Request PUT http://localhost:8080/listing  (The endpoint will modify the Listing created in 2.3 step Above. The Listing data must be in body section as below)</br>
 ![image](https://user-images.githubusercontent.com/63114961/163677115-64002a05-fb8f-4814-9609-e97bbd65fc5f.png)</br>
 The API will return the Listing updated. See image below for details</br>
 ![image](https://user-images.githubusercontent.com/63114961/163677143-2137e8f8-4755-4a65-8069-177232e23c76.png)
 
-  * 2.4 - Request DELETE http://localhost:8080/listing/3bed1f91-38ec-48df-86a2-19dd1ac905ce (The API will return 200 as status code)</br>
+  * 2.5 - Request DELETE http://localhost:8080/listing/3bed1f91-38ec-48df-86a2-19dd1ac905ce (The API will return 200 as status code)</br>
    
 
 ## ⚙️ API RESTFul Test - Running Examples
@@ -222,13 +221,12 @@ As requirement, this project implemented JUnit test class for Dealer and Listing
 
 
 ## 📋 API Development - Review Technical Aspect and Improvement Suggestions
-* **1 - ListingServiceBO.java**
+* **1 ListingServiceBO.java**
    * 1.1 - Method **public Listing update(Listing listing_)**
      This method need some improvements in logical and structural aspect. Improvements in Dealer's Listing limit test (published)
    * 1.2 - Methody **public Listing published(String listingId)**
      With similar aspect with update methody, it's possible improve the Limit Listing test, creating a new method for test it.
    * 1.3 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
-
 
 * **2 - DealerServiceBO.java**
    * 2.1 - Method **public Dealer update(Dealer _dealer)**
@@ -243,14 +241,17 @@ As requirement, this project implemented JUnit test class for Dealer and Listing
 
 ## 📋 API Test - Review Technical Aspect and Improvement Suggestions
 **(Functional Test)** Status: Developed
-* 1 - ListingEndpointTest.java 
+* **1 - ListingEndpointTest.java 
    * 1.1 - Method **public Listing update(Listing listing_)**
    * 1.2 - Method **public void findDealerByDealerIdAndVerifyNameAndLimitListing()**
    * 1.3 - Method **public void verifyDealerQuantity()**
-In general, it will be beneficial to deepen the level of tests performed, especially when the returned object has a list in its body, such as, for example, the draft or published ads of a specific dealer
+In general, deepen the level of tests especially when the return has complex object with objects and list. Example: the draft or published Listing of a specific dealer
 
 **(Coverage Test)** Status: Technical debt (Not developed)
 **(Unit Test)** Status: Technical debt (Not developed)
+
+## 📋 DevOps - Review Technical Aspect and Improvement Suggestions
+Is essential implement the concept of devops creating the Continuous Development and Continuous Delivery environment CD/CI, using tools such as Jenkins in conjunction with Quality Gate and Sonar. Also create dockerized environments for development and homologation for releases
 
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
