@@ -18,6 +18,7 @@ This project was developed using the best practices in API RESTFUll development.
 * 1 - **Controller** In addition to implementing the endpoints for the services provided by the entity, this layer is responsible for converting the requests made in XML, JSON and YAML format to the format accepted by the backend and also converting responses to the format desired by the API user. 
 * 2 - **ServiceVO** Responsible for converting VO class objects to entity classes recognized by the business layer. The VO layer implementation allows modifying the attributes of the inner classes for the user consuming the API. This new mapping increases the security of the application by hiding the real attributes of the business classes.
 * 3 - **ServiceBO** In this layer are applied as business rules before the operations with the database, using a own repository data access class and other BO service classes. 
+* 4 - **JWT** Authentication using token
 
 ## ⚙️ UML Diagrams (Simplified)
 * 1 - **Class Diagram**
