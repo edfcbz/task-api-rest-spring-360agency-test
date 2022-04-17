@@ -254,7 +254,10 @@ In general, deepen the level of tests especially when the return has complex obj
 **(Unit Test)** Status: Technical debt (Not developed)
 
 ## 📋 DevOps - Review Technical Aspect and Improvement Suggestions
-Is essential implement the DevOps concept creating the Continuous Development and Continuous Delivery environment CD/CI. For this tools such as Jenkins in conjunction with Quality Gate and Sonar will be util. Also create development and homologation dockerized environment using Docker or similar tools
+Is essential implement the DevOps concept as below:
+* 1 - Continuous Development and Continuous Delivery environment CD/CI using tools such as pipeline Jenkins
+* 2 - Quality Gate and Sonar To define the developed code acceptance criteria
+* 3 - Dockerized environment, for Development and Homologation
 
 ## 📋 Technical Debt
 As a requirement, the use of the UUID data type was requested as an identifier for the Dealer and Listing entities, however the project used the String type and the **org.hibernate.id.UUIDGenerato** strategy to generate the primary keys.
