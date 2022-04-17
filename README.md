@@ -61,9 +61,8 @@ This project was developed using the best practices in API RESTFUll development.
 * 1 - MySQL Database (SGBD Tool)
 * 2 - Java 11
 * 3 - IDE Development. The project was developed Eclipse Version: 2020-06 (4.16.0) Build id: 20200615-1200
-* 4 - The source code from https://github.com/edfcbz/task-api-rest-spring-360agency-test
-* 5 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
-* 6 - Http request tool as Postman or similar  
+* 4 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
+* 5 - Http request tool as Postman or similar  
 
 
 ## 🚀 Starting Database and Environment
