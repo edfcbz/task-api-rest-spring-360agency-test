@@ -69,13 +69,13 @@ This project was developed using the best practices in API RESTFUll development.
 Fellow the below step for run the project
 
 ## 🔧 Development Environment Setup - DATABASE
-* 1 - Download in https://github.com/edfcbz/task-api-rest-spring-360agency-test **task-api-rest-360agency.rar** file 
+* 1 - Download in https://github.com/edfcbz/task-api-rest-spring-360agency-test **task-api-rest-360agency.rar** file and unzip it.
 
-* 1 - Install and Run the MySQL Server (Default port)
-* 2 - Install and Run the HeidiSQL
-  * 2.1 - In HeidiSQL run **CreatingDatabase360agency.sql** and **InsertDataTestInTables.sql** file (These steps will create the SCHEMA and will insert basic data into tables). For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon)
-  * 2.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
-  * 2.3 - Verify if schema was created and tables has data 
+* 2 - Install and Run the MySQL Server (Default port)
+* 3 - Install and Run the HeidiSQL
+  * 3.1 - In HeidiSQL run **CreatingDatabase360agency.sql** and **InsertDataTestInTables.sql** files. These files are located in task-api-rest-360agency\src\main\resources\files folder. For it select: File -> Load SQL file -> Press SQL Execute (Blue Icon), this action will create the SCHEMA and insert basic data into tables. 
+  * 3.2 - After prior step refresh environmet F5 key or press icon green (Refresh)
+  * 3.3 - Verify if schema was created and tables has data 
 
 ## 🔧 Development Environment Setup - DEVELOPMENT
 
