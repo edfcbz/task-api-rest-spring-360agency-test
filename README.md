@@ -2,6 +2,27 @@
 
 This project implements the use, test and log functionalities of the RESTFull API for Dealer and Listing entities, with supports for basic and customized CRUD operations. With different sections, this document define all details of project and how use it. If you have any question about topics below, let me know by email informed in boton of this document. Thank you !
 
+## 📋 Business
+* 1 - **Requirements**
+  * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)</br>
+           * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
+  * 1.2 - **Car Dealer** - An owner of the advertisement</br>
+           * 1.2.1 - **Atributes** id: uuid, name: String</br>
+           * 1.2.2 - **Tier Limit** A number of published listings a dealer can have online </br>
+  * 1.3 - **Logs**
+  * 1.4 - **Exception handling**
+  * 1.5 - **Documentation**
+  * 1.6 - **Tests**
+
+* 2 - **Functionality**
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, **publish** and **unpublish** a listing, **update (publishing) the oldest and removing one**.
+  
+  * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
+
+* 3 - **Rules**
+  * 3.1 - **Car Dealer** - Must have the maximum number of published Listings 
+  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest (If selected apropriated endpoint )
+
 ## ⚙️ Main Technologies
 * 1 - **String** Boot, Security and Data
 * 2 - **Swagger** API Documentation
@@ -33,26 +54,7 @@ This project was developed using the best practices in API RESTFUll development.
  
 ![image](https://user-images.githubusercontent.com/63114961/163567713-91ee2b81-a12a-44a0-a600-311e0519853e.png)
 
-## 📋 Business
-* 1 - **Requirements**
-  * 1.1 - **Listing** - A vehicle advertisement. Listing can be in one of two possible states: **published** or **draft** (available or not online)</br>
-           * 1.1.1 - **Atributes** id: uuid, dealerId: uuid, vehicle: string, price: number, createdAt: date, state: draft/published 
-  * 1.2 - **Car Dealer** - An owner of the advertisement</br>
-           * 1.2.1 - **Atributes** id: uuid, name: String</br>
-           * 1.2.2 - **Tier Limit** A number of published listings a dealer can have online </br>
-  * 1.3 - **Logs**
-  * 1.4 - **Exception handling**
-  * 1.5 - **Documentation**
-  * 1.6 - **Tests**
 
-* 2 - **Functionality**
-  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, **publish** and **unpublish** a listing, **update (publishing) the oldest and removing one**.
-  
-  * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
-
-* 3 - **Rules**
-  * 3.1 - **Car Dealer** - Must have the maximum number of published Listings 
-  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest (If selected apropriated endpoint )
 
 ## 🛠️ Tools Technical Requirements
 
