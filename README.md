@@ -253,6 +253,9 @@ In general, deepen the level of tests especially when the return has complex obj
 ## 📋 DevOps - Review Technical Aspect and Improvement Suggestions
 Is essential implement the concept of devops creating the Continuous Development and Continuous Delivery environment CD/CI, using tools such as Jenkins in conjunction with Quality Gate and Sonar. Also create dockerized environments for development and homologation for releases
 
+## 📋 Technical Debt
+As a requirement, the use of the UUID data type was requested as an identifier for the Dealer and Listing entities, however the project used the String type and the **org.hibernate.id.UUIDGenerato** strategy to generate the primary keys.
+
 ## ⚙️ Documentation Swagger
 * 9 - Open browser and type: http://localhost:/swagger-ui.html (This url will open a page with and example for API use.
 
