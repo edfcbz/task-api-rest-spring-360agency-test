@@ -15,7 +15,7 @@ This project implements the use, test and log functionalities of the RESTFull AP
   * 1.6 - **Tests**
 
 * 2 - **Functionalities**
-  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, **find by dealer and state**, find by state, **publish** and **unpublish** a listing, **update (publishing) the oldest and removing one**.
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, find by dealer and state, find by state, publish and unpublish a listing, update (publishing) the oldest and removing one.
   
   * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
