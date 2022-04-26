@@ -249,7 +249,7 @@ In general, deepen the level of verification of expected results, especially whe
 
 **(Coverage Test)** Status: Technical debt (Not developed)</br>
 **(Unit Test)** Status: Technical debt (Not developed)</br>
-**(Performance Test)** Status: Technical debt (Not developed - Run in Production Environment)
+**(Performance Test)** Status: Technical debt (Not developed - Run in Homologation when similar at Production)
 
 
 ## 📋 DevOps - Review Technical, and Improvement Suggestions
