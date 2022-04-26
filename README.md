@@ -247,7 +247,7 @@ As requirement, this project implemented JUnit test class for Dealer and Listing
    * 1.2 - Class **ListingEndpointTest,java**
 In general, deepen the level of verification of expected results, especially when the return has complex object with objects and list inside. Example: the draft or published Listing of a specific dealer
 
-**(Coverage Test)** Status: Technical debt (Not developed)
+**(Coverage Test)** Status: Technical debt (Not developed)</br>
 **(Unit Test)** Status: Technical debt (Not developed)
 
 ## 📋 DevOps - Review Technical, and Improvement Suggestions
