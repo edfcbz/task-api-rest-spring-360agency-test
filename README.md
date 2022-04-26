@@ -237,7 +237,7 @@ As requirement, this project implemented JUnit test class for Dealer and Listing
 
 ## 📋 LOG - Review Technical and Improvement Suggestions
    * 1.1 - Increase details, adding logged user in the message
-   * 1.2 - Currently shown log message on console. Add save-to-file behavior
+   * 1.2 - Currently shows log message on console. Also add save-to-file behavior
 
 ## 📋 JUnit Test - Review Technical and Improvement Suggestions
 
