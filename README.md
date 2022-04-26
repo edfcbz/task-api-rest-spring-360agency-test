@@ -1,6 +1,8 @@
 # This repository has a RESTFul API for Dealer and Listing entities
 
-This project implements the use, test and log functionalities of the RESTFull API for Dealer and Listing entities, with supports for basic and customized CRUD operations. With different sections, this document define all details of project and how use it. If you have any question about topics below, let me know by email informed in boton of this document. Thank you !
+This project implements the use, test and log functionalities of the RESTFull API for Dealer and Listing entities, with supports for basic and customized CRUD operations. With different sections, this document define all details of project and how use it. If you have any question about topics below, let me know by email informed in boton of this document. 
+
+Thank you for review !
 
 ## 📋 Business
 * 1 - **Requirements**
