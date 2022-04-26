@@ -15,7 +15,7 @@ This project implements the use, test and log functionalities of the RESTFull AP
   * 1.6 - **Tests**
 
 * 2 - **Functionalities**
-  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, find by Dealer and state, find by state, publish*, publish** unpublishin the oldest.
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, find by dealer id and state, find by state, publish*, publish** unpublishin the oldest.
   
   * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
@@ -27,19 +27,19 @@ This project implements the use, test and log functionalities of the RESTFull AP
 * 1 - **String** Boot, Security and Data
 * 2 - **Swagger** API Documentation
 * 3 - **Dozer** Class converter
-* 4 - **HATEAOS** Supports development of a RESTFul API 
-* 5 - **Jackson** Allows requeste and response in xml, yaml, json format
+* 4 - **HATEAOS** Supports for RESTFul API 
+* 5 - **Jackson** Allows request and response in xml, yaml, json format
 * 6 - **JUnit** Test Class in Java Language
 * 7 - **Mockito** Offers a library with different methods for performing and validating tests
-* 8 - **REST Assured** Testing and validating REST services
-* 9 - **Hamcrast** Testing and validating REST services
+* 8 - **REST-Assured** API for building tests and validating results
+* 9 - **Hamcrast** API for validating REST services 
 
 ## ⚙️ Architecture ( MVC Pattern )
-This project was developed using the best practices in API RESTFUll development. The layers that make up the solution are listed and described below
+This project was developed using the best practices in API RESTFUll development. The solution's layers are listed and described below
 * 1 - **Controller** In addition to implementing the endpoints for the services provided by the entity, this layer is responsible for converting the requests made in XML, JSON and YAML format to the format accepted by the backend and also converting responses to the format desired by the API user. 
-* 2 - **ServiceVO** Responsible for converting VO class objects to entity classes recognized by the business layer. The VO layer implementation allows modifying the attributes of the inner classes for the user consuming the API. This new mapping increases the security of the application by hiding the real attributes of the business classes.
-* 3 - **ServiceBO** In this layer are applied as business rules before the operations with the database, using a own repository data access class and other BO service classes. 
-* 4 - **JWT** Authentication using token
+* 2 - **ServiceVO** Responsible for converting VO class objects to entity classes recognized by the business layer. The VO layer implementation allows modifying the attributes of the inner classes for the user consuming the API. This mapping increases the security of the application by hiding the real attributes of the business classes.
+* 3 - **ServiceBO** This layer is accountable for business rules before the operations with the database. Other BO service classes can by used in ths layer. 
+* 4 - **JWT** Authentication by token
 
 ## ⚙️ UML Diagrams (Simplified)
 * 1 - **Class Diagram**
@@ -56,14 +56,13 @@ This project was developed using the best practices in API RESTFUll development.
 
 
 
-## 🛠️ Tools Technical Requirements
+## 🛠️ Tools Technical Requirements ( Other can be used according Developer wish )
 
-* 1 - MySQL Database (SGBD Tool)
+* 1 - MySQL Server: Version 8.0.19
 * 2 - Java 11
-* 3 - IDE Development. The project was developed Eclipse Version: 2020-06 (4.16.0) Build id: 20200615-1200
-* 4 - Database client as MySql Workbench. The project choose HeidiSQL 64 bits Version 11.0.0.5919 Build 2020-03-17 17:05:04
-* 5 - Http request tool as Postman or similar  
-
+* 3 - Eclipse: Version 2020-06 (4.16.0) Build id: 20200615-1200
+* 4 - HeidiSQL as SQL client 64 bits: Version 11.0.0.5919 Build 2020-03-17 17:05:04
+* 5 - Postman as http request tool: Version 9.16.0
 
 ## 🚀 Starting Database and Environment
 Fellow the below step for run the project
