@@ -15,13 +15,13 @@ This project implements the use, test and log functionalities of the RESTFull AP
   * 1.6 - **Tests**
 
 * 2 - **Functionalities**
-  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, find by dealer and state, find by state, publish and unpublish a listing, update (publishing) the oldest and removing one.
+  * 2.1 - **Listing:** Create, update, delete, find all, find by Id, find by Vehicle description, find by Dealer and state, find by state, publish*, publish** unpublishin the oldest.
   
   * 2.1 - **Car Dealer:** Create, update, delete, find all, find by id, find by id and state, find by dealer name.  
 
 * 3 - **Rules**
   * 3.1 - **Car Dealer** - Must have the maximum number of published Listings 
-  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During updating the sistem checks if the limit has been reached and replaces the oldest (If selected apropriated endpoint )
+  * 3.2 - **Listing** - The quantity published is limited, according Dealer setting. During the update the system should check and throw an exception if the limit has been reached as well offer another endpoint during update process as option to replaces the oldest Listing
 
 ## ⚙️ Main Technologies
 * 1 - **String** Boot, Security and Data
