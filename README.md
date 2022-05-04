@@ -35,6 +35,7 @@ Thank you for review !
 * 7 - **Mockito** Offers a library with different methods for performing and validating tests
 * 8 - **REST-Assured** API for building tests and validating results
 * 9 - **Hamcrast** API for validating REST services 
+* 10 - **RabbitMQ** Framework for Assincronous Messages between applications 
 
 ## ⚙️ Architecture ( MVC Pattern )
 This project was developed using the best practices in API RESTFUll development. The solution's layers are listed and described below
@@ -120,7 +121,6 @@ Fellow the below step for run the project
   * 1.6 - **PUT** request for http://localhost:8080/dealer ( Update the Dealer informed in  Body section using **dealerId** as key )
   * 1.7 - **DELETE** request for http://localhost:8080/dealer/{dealerId} ( Delete Dealers by identification match with the parameter ) 
 
-
 * 2 - **Listing** endpoints 
   * 2.1 - **GET** request for http://localhost:8080/listing  ( Show all Listing registered in the Database )
   * 2.2 - **GET** request for http://localhost:8080/listing/{listingId} ( Show the all Listing details according **listingId** informed )
@@ -132,6 +132,9 @@ Fellow the below step for run the project
   * 2.8 - **POST** request for http://localhost:8080/listing/overwriting ( Save the Listing informed in Body section removing the oldest registre if limit was reached )
   * 2.9 - **PUT** request for http://localhost:8080/listing ( Update the Listing informed in  Body section using **id** atribute as a key )
   * 2.10 - **DELETE** request for http://localhost:8080/listing/{listingId} ( Delete Listing using **listingId** as a key) 
+
+* 3 - **Log** endpoints 
+  * 3.1 - **GET** request for http://localhost:8080/log/<email> ( Send the log file to email informed in the parameter )
 
 ## 🚀 Starting JUnit Test Class
 ## VERY IMPORTANT Before everything, execute section "Testing environment" Above. "THIS IS ESSENTIAL"
@@ -253,12 +256,12 @@ In general, deepen the level of verification of expected results, especially whe
 **(Unit Test)** Status: Technical debt (Not developed)</br>
 **(Performance Test)** Status: Technical debt (Not developed - Run in Homologation when similar at Production)
 
-
 ## 📋 DevOps - Review Technical, and Improvement Suggestions
 Is essential implement the DevOps concept as below:
 * 1 - Continuous Development and Continuous Delivery environment CD/CI using tools such as pipeline Jenkins
 * 2 - Quality Gate and Sonar To define the developed code acceptance criteria
 * 3 - Dockerized environment, for Development, Homologation and Production
+* 4 - RabbitMQ Message, for while the broaker store and delivery a simple message for consumer, but will send an email for especified destination in next release. 
 
 ## 📋 Technical Debt
 Was require the use of the UUID data type as an identifier for the Dealer and Listing entities, however the project used the String type and the **org.hibernate.id.UUIDGenerator** as strategy to generate the primary keys.
